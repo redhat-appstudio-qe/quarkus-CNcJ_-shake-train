@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-oerf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-iofy-tenant/quarkus/devfile-sample-code-with-quarkus-oerf@sha256:b4668680e6e9b082dd32844949254dfefaf866198ddc04f6e32b928b1e96af0e
+        name: my-java-quarkus
+        resources: {}
+status: {}
